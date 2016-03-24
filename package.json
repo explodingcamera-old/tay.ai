@@ -1,0 +1,23 @@
+{
+  "name": "tay.ai",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/explodingcamera/tay.ai.git"
+  },
+  "author": "Henry Gressmann <mail@explodingcamera.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/explodingcamera/tay.ai/issues"
+  },
+  "homepage": "https://github.com/explodingcamera/tay.ai#readme",
+  "dependencies": {
+    "bluebird": "^3.3.4",
+    "twitter": "^1.2.5"
+  }
+}
