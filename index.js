@@ -19,7 +19,7 @@ function tay(args) {
       access_token_key: _this.twitterKeys.accessTokenKey,
       access_token_secret: _this.twitterKeys.accessTokenSecret,
     });
-    return new Promise(function (resolve) {
+    return new Promise(function (resolve, reject) {
       _this.TwitterClient.stream('user', function (stream) {
         _this.TwitterClient.get('application/rate_limit_status', function (error, data, response) {
           if (error) {
@@ -36,8 +36,6 @@ function tay(args) {
             .then(function (data) {
               console.log(data);
             });
-          } else {
-            events.emit('answer', 'An error acurred');
           }
         });
 
